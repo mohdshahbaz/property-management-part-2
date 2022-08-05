@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 import { AddPropertyComponent } from './add-property/add-property.component';
 import { PropertyManagementComponent } from './property-management/property-management.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { DataService } from "./data.service";
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -22,7 +20,6 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    InMemoryWebApiModule.forRoot(DataService),
     HttpClientModule
   ],
   providers: [],

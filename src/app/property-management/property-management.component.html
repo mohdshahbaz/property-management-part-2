@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row d-flex justify-content-end mt-5">
+        <div class="col-3 ">
+
+            <button class="btn btn-primary" routerLink="add-property">Add Property</button>
+        </div>
+
+
+    </div>
+
+    <div class="row mt-4">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let property of propertyData.records">
+                    <td>{{property.fields['name']}}</td>
+                    <td>{{property.fields.size}}</td>
+                    <td>{{property.fields.description}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
